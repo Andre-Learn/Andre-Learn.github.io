@@ -5,6 +5,33 @@ body {
   padding: 0;
 }
 
+body {
+  background-color: #000;
+  position: relative;
+  height: 100vh;
+}
+
+.bg-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(148,0,211,1) 0%, 
+                  rgba(148,0,211,0.3) 70%);  
+  filter: blur(150px);
+}
+
+.bg-circle:nth-child(1) {
+  top: -100px;
+  right: -100px; 
+}
+
+.bg-circle:nth-child(2) {
+  bottom: -100px;
+  left: -100px;
+  }
+
+
 /* Style untuk top navigation */  
 .navbar {
   background-color: #fff; 
@@ -82,4 +109,4 @@ body {
 .bg-circle:nth-child(2) {
   bottom: -100px;
   left: -100px;
-  }
+}
